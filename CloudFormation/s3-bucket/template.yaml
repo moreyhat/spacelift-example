@@ -3,3 +3,8 @@ Description: A template for creating S3 bucket
 Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
+
+Outputs:
+  S3Bucket:
+    Description: S3 bucket
+    Value: !Ref S3Bucket
