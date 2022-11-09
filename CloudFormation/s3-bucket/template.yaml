@@ -1,0 +1,4 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A template for creating S3 bucket
+Resources:
+  Type: AWS::S3::Bucket
