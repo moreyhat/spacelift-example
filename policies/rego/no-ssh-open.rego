@@ -11,10 +11,10 @@ cfn_ssh_full_open {
 
 pulumi_steps = input.pulumi.steps
 pulumi_ssh_full_open {
-  some i, j
-  pulumi_steps[i].new.inputs.ingress[j].fromPort <= 22
-  pulumi_steps[i].new.inputs.ingress[j].toPort >= 22
-  pulumi_steps[i].new.inputs.ingress[j].cidrBlocks[_] == "0.0.0.0/0"
+  some k, l
+  pulumi_steps[k].new.inputs.ingress[l].fromPort <= 22
+  pulumi_steps[k].new.inputs.ingress[l].toPort >= 22
+  pulumi_steps[k].new.inputs.ingress[l].cidrBlocks[_] == "0.0.0.0/0"
 }
 
 deny["SSH full open"] {
