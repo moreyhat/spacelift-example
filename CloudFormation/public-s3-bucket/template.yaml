@@ -3,8 +3,10 @@ Description: A template for creating S3 bucket
 Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
 
 Outputs:
-  S3Bucket:
+  S3Bucket1:
     Description: S3 bucket
     Value: !Ref S3Bucket
