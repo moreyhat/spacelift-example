@@ -25,6 +25,7 @@ const securityGroup = new aws.ec2.SecurityGroup("security-group", {
 });
 
 const instance = new aws.ec2.Instance("instance", {
+    ami: "ami-094125af156557ca2",
     instanceType: "t3.nano",
     tags: {
         Name: "Spacelift-test"
