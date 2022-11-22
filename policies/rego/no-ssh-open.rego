@@ -1,6 +1,6 @@
 package spacelift
 
-changes := input.cloudformation.changes
+cfn_changes := input.cloudformation.changes
 
 ssh_full_open {
   some i, j
