@@ -1,0 +1,3 @@
+name: ssh-open
+description: A minimal AWS TypeScript Pulumi program
+runtime: nodejs
