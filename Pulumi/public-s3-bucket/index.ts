@@ -4,7 +4,7 @@ import * as awsx from "@pulumi/awsx";
 
 // Create an AWS resource (S3 Bucket)
 const bucket = new aws.s3.Bucket("my-bucket", {
-    // acl: 'public-read',
+    acl: 'public-read',
 });
 
 // Export the name of the bucket
